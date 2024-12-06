@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-top: 80px; /* Adjust space for fixed header */
+}
+
+/* Header Section */
+#header {
+    position: relative;
+    background: #2c3e50;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#header .logo {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+#header .header-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#header .header-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#header .header-text span {
+    color: #e74c3c;
+}
+
+#header .header-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#header .btn {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#header .btn:hover {
+    background-color: #c0392b;
+}
+
+/* Navigation Styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* About Section */
+/* About Section */
+#about {
+    background-color: #f0f4f8; /* Light background for a clean look */
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about h1.sub-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tab-links {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-links.active-link,
+.tab-links:hover {
+    background-color: #c0392b;
+}
+
+.tab-contents {
+    display: none;
+    text-align: left;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Skills List */
+#about ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about ul li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#about ul li span {
+    font-weight: 600;
+    color: #e74c3c;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #about {
+        text-align: center;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+    }
+
+    #about ul {
+        text-align: left;
+    }
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+}
+
+#portfolio .sub-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#portfolio .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#portfolio .portfolio-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#portfolio .portfolio-item h3 {
+    font-size: 22px;
+    padding: 20px;
+    color: #333;
+}
+
+#portfolio .portfolio-item p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+#portfolio .portfolio-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 20px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#portfolio .portfolio-item a:hover {
+    background-color: #c0392b;
+}
+
+#portfolio .portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa; /* Subtle background to keep it light */
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Side - Contact Info */
+#contact .contact-left {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    max-width: 45%;
+}
+
+#contact .sub-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.contact-info a {
+    color:#2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    color: #ac3f05;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 30px 0;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color:#2c3e50 ;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color:#ac3f05 ;
+}
+
+/* Contact Button */
+#contact .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#contact .btn:hover {
+    background-color: #ac3f05;
+}
+
+/* Right Side - Contact Form */
+#contact .contact-right {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Contact Form Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color:  #2c3e50;
+    background-color: #fff;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #contact .container {
+        flex-direction: column;
+    }
+
+    #contact .contact-left,
+    #contact .contact-right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #contact .contact-left {
+        padding-bottom: 30px;
+    }
+}

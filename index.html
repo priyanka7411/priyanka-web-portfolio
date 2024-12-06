@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Malavade - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+<div id="header">
+    <div id="container">
+        <nav>
+            <ul class="vertical-nav">
+                <li><a href="#header" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#portfolio" class="nav-link">My Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div class="header-text">
+            <h2 class="subtitle">BCA Graduate | Web Developer | Data Analyst</h2>
+            <h1>Welcome, I'm <span>Priyanka Malavade</span></h1>
+            <h3>Based in Hubli, Karnataka</h3>
+            <p>I specialize in crafting intuitive websites and analyzing data to drive insights. With a passion for technology, I'm excited about leveraging my skills to create impactful solutions.</p>
+            <a href="#contact" class="btn">Connect with Me</a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- About Section -->
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hi, I'm Priyanka Malavade from Hubli, Karnataka. I recently graduated with a BCA from Oxford College. My passion for technology drives me to specialize in Web Development, Data Analytics, and Business Intelligence. I focus on creating user-friendly solutions that make technology accessible. Whether it's front-end development or data-driven insights, I strive to continually improve my skills and deliver impactful solutions.</p>
+            
+            <!-- Tab Navigation -->
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            
+            <!-- Skills Tab Content -->
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development:</span>Proficient in building responsive websites using Django, HTML, CSS, and JavaScript.</li>
+                    <li><span>Programming Languages:</span>Skilled in Python, Java, and SQL with a strong foundation in Data Structures & Algorithms.</li>
+                    <li><span>Data Analysis:</span>Experienced with data cleaning, preprocessing, and creating dashboards using Power BI and Tableau.</li>
+                    <li><span>Web Scraping:</span>Expertise in web scraping using Selenium and Python for dynamic data collection.</li>
+                </ul>
+            </div>
+            
+            <!-- Experience Tab Content -->
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Intern at Mitras IT Solution:</span>Developed an Employee Leave Management System using Django, improving user experience and functionality.</li>
+                    <li><span>Web Scraping Project:</span>Implemented a web scraper using Selenium and Streamlit for Redbus data with dynamic filtering.</li>
+                    <li><span>Retail Analytics Project:</span>Performed data analysis on retail sales, visualized trends, and provided insights using Power BI and Tableau.</li>
+                </ul>
+            </div>
+            
+            <!-- Education Tab Content -->
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Bachelor of Computer Applications (BCA):</span>Graduated from Oxford College of Computer Applications, specializing in Web Development and Data Science.</li>
+                    <li><span>SSLC:</span>Loyola Kendriya Vidyalaya, Mundgod.</li>
+                    <li><span>PUC:</span>MES Chaitanya, Sirsi.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+                
+
+                
+                <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div id="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNbAD2iOPk1Yk_7DDKy2A80Xdv2YF01Ny1kg&s" alt="Project 1">
+                    <h3>Redbus Data Scraping</h3>
+                    <p>Created a web scraper using Selenium and integrated it with Streamlit for dynamic filtering and analysis of bus routes.</p>
+                    <a href="https://github.com/priyanka7411/Redbus-Data-Scraping-Streamlit" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://cdn.boldbi.com/wp/pages/dashboards/retail/retail-store-performance-v1-banner.webp" alt="Project 2">
+                    <h3>Retail Analytics Dashboard</h3>
+                    <p>Built a Power BI dashboard to analyze retail sales data and provide actionable insights for decision-making.</p>
+                    <a href="https://github.com/yourusername/retail-analytics" target="_blank" class="btn">View Project</a>
+                </div>
+                <!-- Add more portfolio items here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="contact-info">
+                    <i class="fa-solid fa-paper-plane"></i><a href="mailto:priyasmalavade@gmail.com">priyasmalavade@gmail.com</a>
+                </p>
+                
+                <div class="social-icons">
+                    <a href="https://in.linkedin.com/in/priyanka-malavade-b34677298/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/priyanka7411"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <div class="input-group">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Priyanka Malavade. All rights reserved.</p>
+        </div>
+    </footer>
+    
